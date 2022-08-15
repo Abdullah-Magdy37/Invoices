@@ -41,4 +41,14 @@ Route::post('delete_file', 'InvoicesDetailsController@destroy')->name('delete_fi
 
 Route::get('/edit_invoice/{id}', 'InvoicesController@edit');
 
+Route::get('/update/statuspaid/{id}', 'InvoicesController@paidstatus');
+
 Route::get('/{page}', 'AdminController@index');
+
+Route::get('/Status_show/{id}', 'InvoicesController@show')->name('Status_show');
+
+Route::post('/Status_Update/{id}', 'InvoicesController@Status_Update')->name('Status_Update');
+
+Route::get('/Status_show/{id}', 'InvoicesController@show')->name('Status_show');
+
+
